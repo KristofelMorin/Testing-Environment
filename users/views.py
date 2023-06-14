@@ -5,8 +5,6 @@ from flask import request, make_response
 from users.service import create_user, reset_password_email_send, login_user, reset_password
 from keras.preprocessing.text import Tokenizer
 from keras.utils import pad_sequences
-from keras import utils
-from keras import Sequential
 #from keras.preprocessing.sequence import pad_sequences
 
 
