@@ -3,10 +3,9 @@
 import os
 from flask import Flask
 from flask_restful import Api
-from flask_sqlalchemy import SQLAlchemy
+#from flask_sqlalchemy import SQLAlchemy
 from flask_mail import Mail
 from users.models import db
-from flask_mail import Message
 #from utils.load_model import init
 
 #db = SQLAlchemy()
@@ -24,7 +23,6 @@ def create_app():
     app.config["MAIL_PASSWORD"] = os.environ.get("EMAIL_HOST_PASSWORD")
     app.config["MAIL_USE_TLS"] = False
     app.config["MAIL_USE_SSL"] = True
-    app.config['FLASKY_MAIL_SENDER'] = False
     mail = Mail(app)
 
     app.config.from_object("config.Config")

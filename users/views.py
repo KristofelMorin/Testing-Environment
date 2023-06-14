@@ -3,8 +3,8 @@ from flask import Response
 from flask_restful import Resource
 from flask import request, make_response
 from users.service import create_user, reset_password_email_send, login_user, reset_password
-from keras.preprocessing.text import Tokenizer
-from keras.utils import pad_sequences
+# from keras.preprocessing.text import Tokenizer
+# from keras.utils import pad_sequences
 #from keras.preprocessing.sequence import pad_sequences
 
 
